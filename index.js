@@ -9,6 +9,9 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+//const tongueTwister = [s1, s2, s3, s4, s5];
+const tongueTwister = (`${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`)
+console.log(tongueTwister)
 
 // Print out the concatenated string
 
@@ -23,10 +26,13 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const part1Camel = part1[3].toUpperCase();
+const part2Camel = part2[5].toUpperCase();
+const cameLtaiL = (`${part1.slice(0,3)}${part1Camel}${part2.slice(0,5)}${part2Camel}`);
 
 // Print the cameLtaiL-formatted string
 
-
+console.log(cameLtaiL);
 
 
 /*******************************************
@@ -35,11 +41,16 @@ const part2 = "script";
 const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
+const tip = billTotal*0.15;
+console.log(tip);
+
+const billWithTip = billTotal + tip;
+
 
 
 // Print out the tipAmount
 
-
+console.log(billWithTip);
 
 
 /*******************************************
@@ -47,10 +58,11 @@ const billTotal = 84;
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
+let randomNumber = Math.floor(Math.random() * 10) + 1;
 
 
 // Print the generated random number
-
+console.log(randomNumber);
 
 
 /*******************************************
